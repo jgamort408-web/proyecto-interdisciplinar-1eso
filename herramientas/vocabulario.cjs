@@ -213,11 +213,11 @@ const PLAN = {
   centro: 'IES Al-Ándalus',
   correo: 'juan.gamez@iesalandalus.org',
   coordina: 'Juan María Gámez Ortiz',
-  aula: { desde: '2026-11-02', hasta: '2026-12-18', texto: 'Noviembre y diciembre' },
+  aula: { desde: '2026-11-09', hasta: '2026-12-18', texto: 'Del 9 de noviembre al 18 de diciembre' },
   tramos: [
     {
       id: 'T1', numero: 1, nombre: 'Me apunto', icono: 'hand',
-      desde: '2026-09-29', hasta: '2026-10-02', entrega: '2026-10-02',
+      desde: '2026-10-05', hasta: '2026-10-09', entrega: '2026-10-09',
       objetivo: 'Saber quién entra, en qué fase del aula y con qué idea.',
       entregable: 'Ficha de compromiso de tu materia',
       minutos: 15,
@@ -226,7 +226,7 @@ const PLAN = {
     },
     {
       id: 'T2', numero: 2, nombre: 'Mi currículo', icono: 'list-checks',
-      desde: '2026-10-05', hasta: '2026-10-09', entrega: '2026-10-09',
+      desde: '2026-10-13', hasta: '2026-10-16', entrega: '2026-10-16',
       objetivo: 'Anclar tu tarea a criterios de evaluación reales, con su evidencia y su instrumento.',
       entregable: 'Ficha curricular de tu materia',
       minutos: 25,
@@ -235,7 +235,7 @@ const PLAN = {
     },
     {
       id: 'T3', numero: 3, nombre: 'Encajamos', icono: 'arrow-left-right',
-      desde: '2026-10-13', hasta: '2026-10-16', entrega: '2026-10-16',
+      desde: '2026-10-19', hasta: '2026-10-23', entrega: '2026-10-23',
       objetivo: 'Acordar qué recibe y qué entrega cada materia, y en qué fecha.',
       entregable: 'Ficha de acuerdos y fechas',
       minutos: 20,
@@ -244,7 +244,7 @@ const PLAN = {
     },
     {
       id: 'T4', numero: 4, nombre: 'Mi sesión', icono: 'square-pen',
-      desde: '2026-10-19', hasta: '2026-10-23', entrega: '2026-10-23',
+      desde: '2026-10-26', hasta: '2026-10-30', entrega: '2026-10-30',
       objetivo: 'Dejar la sesión minutada y el material del alumnado listo para noviembre.',
       entregable: 'Guion de sesión y material',
       minutos: 40,
@@ -253,7 +253,7 @@ const PLAN = {
     },
   ],
   cierre: {
-    fecha: '2026-10-26',
+    fecha: '2026-11-02',
     nombre: 'Cierre y calendario de aula',
     icono: 'users',
     objetivo: 'Reunión de una hora: proyecto completo, calendario de sesiones y acuerdos firmados.',
