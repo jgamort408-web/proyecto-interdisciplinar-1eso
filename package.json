@@ -1,0 +1,16 @@
+{
+  "name": "proyecto-interdisciplinar-1eso",
+  "version": "1.0.0",
+  "description": "Web de trabajo del equipo educativo de 1.º de ESO del IES Al-Ándalus. Cuatro tramos semanales, una plantilla corta por tramo y materia, y un panel para ver el plan completo.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "exceljs": "^4.4.0"
+  }
+}

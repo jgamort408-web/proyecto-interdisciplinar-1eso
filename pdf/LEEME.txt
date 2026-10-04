@@ -1,0 +1,27 @@
+PROYECTO INTERDISCIPLINAR 1.º ESO · PLANTILLAS VISUALES
+
+Empieza por 00_Como_funciona.pdf. Tiene el circuito y la clave visual.
+
+00 Cómo funciona ............ todo el equipo · A4, 2 págs.
+01 Tiendas de Barrio ........ todo el equipo · A4 apaisado, 2 págs.
+02 Fichas por materia ....... cada docente imprime SOLO la suya · A4
+                              pág. 1: su aportación · resto: su currículo completo
+03 Propón otro reto ......... quien tenga una idea · A4, 2 págs.
+04 Mural del equipo ......... coordinación, para la reunión · A3, 2 págs.
+
+IMPRESIÓN
+Pensado para blanco y negro: cada materia se reconoce por su icono y su código.
+El color identifica la materia al verlo en pantalla.
+A3 puede imprimirse en A4 ajustando a página.
+
+LO QUE ANTES SE LLAMABA «BLOQUE B1–B6»
+En estas plantillas son «Fases 1–6», para no confundirlas con los bloques de saberes.
+
+DATOS
+Criterios, competencias y saberes: Curriculo_consulta.json (BOJA 30/05/2023 y BOE para Religión),
+el mismo del kit «DRIVE SdA 1ESO Andalucia». Los iconos de competencias y bloques son una
+decisión didáctica revisable, no una clasificación oficial. Las ideas por materia son propuestas.
+
+REGENERAR
+_fuente/generar.cjs vuelve a crear todos los PDF desde los HTML de _fuente/html.
+Iconos Lucide (licencia ISC). Fuentes Atkinson Hyperlegible Next y Mono, Zilla Slab (licencia OFL).
