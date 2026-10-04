@@ -32,6 +32,15 @@ const EMOJI_ACCION = {
 
 const ESTADOS = ['Pendiente', 'Empezada', 'Enviada', 'Revisada', 'No participa'];
 const hex = (c) => c.replace('#', 'FF');
+
+/**
+ * Las fechas se escriben a medianoche UTC. Con medianoche local, el libro las guarda
+ * como el día anterior (en España estamos en UTC+1 o +2) y el calendario sale corrido.
+ */
+const fechaUTC = (iso) => {
+  const [a, m, d] = iso.split('-').map(Number);
+  return new Date(Date.UTC(a, m - 1, d));
+};
 const MATERIAS = V.MATERIAS.map((m) => ({ ...m, ref: m.ref ?? m.id, cur: CUR.find((s) => s.id === m.id) }));
 
 const libro = new ExcelJS.Workbook();
@@ -126,7 +135,7 @@ const validacion = (hoja, columna, desde, hasta, formula) => {
 
   let f = 3;
   const fechaCelda = (celda, iso) => {
-    celda.value = new Date(`${iso}T00:00:00`);
+    celda.value = fechaUTC(iso);
     celda.numFmt = 'ddd d mmm';
     celda.alignment = { horizontal: 'center' };
   };
@@ -259,7 +268,7 @@ let filasAportaciones = 0;
   fila.getCell(14).value = 55;
   fila.getCell(15).value = 'Plástica y Audiovisual';
   fila.getCell(16).value = 'Lengua Castellana';
-  fila.getCell(17).value = new Date('2026-11-13T00:00:00');
+  fila.getCell(17).value = fechaUTC('2026-11-13');
   fila.getCell(17).numFmt = 'ddd d mmm';
   fila.getCell(18).value = 'Enviada';
   for (let c = 1; c <= 19; c++) { fila.getCell(c).font = { ...NORMAL, italic: true, color: { argb: 'FF586273' } }; borde(fila.getCell(c)); }
